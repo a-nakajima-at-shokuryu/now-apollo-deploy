@@ -1,0 +1,16 @@
+{
+  "name": "now-apollo-deploy", 
+  "version": 2, 
+  "builds": [
+    {
+      "src": "api/data.js", 
+      "use": "@now/node-server"
+    }
+  ], 
+  "routes": [
+    {
+      "src": "/.*", 
+      "dest": "api/data.js"
+    }
+  ]
+}
